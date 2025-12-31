@@ -1,14 +1,8 @@
-body {
-  margin: 0;
-  padding: 0;
-}
-
-.landing-page {
-  height: 100vh;
-  background-image: url("https://images.unsplash.com/photo-1501004318641-b39e6451bec6");
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+app_css_content = """.landing-page {
+    background-image: url('path_to_your_image.jpg');
+    background-size: cover;
+    text-align: center;
+    padding: 50px;
+}"""
+with open(f"{project_name}/App.css", "w") as f:
+    f.write(app_css_content)
